@@ -257,3 +257,24 @@ li {
   color:black;
   font-size: 16px;
 }
+
+#what_graph {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#jobs_city {
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  width:50%;
+}
+
+#salary_chart {
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  width:50%;
+}
