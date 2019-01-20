@@ -1,6 +1,10 @@
 # ETL Project
 Our team was curious about what our job prospects after class looked like. As a result, we wanted to answer a few questions with as much data as we could find. We then cleaned the data and loaded it into MongoDb. We also loaded what we found onto a website for a fake company named "Data Future" so that anyone interested in our work has an easier time viewing our findings. 
 
+Our website is at: https://chrng404.github.io/Data_Science_ETL_Project/templates/index.html
+
+For a better look at our findings, please feel free to visit our website or view the powerpoint presentation. 
+
 ## The Questions
 Our team set out to answer a few questions in the data science field: 
 
@@ -51,4 +55,9 @@ Below the folders,  you'll find several files that were used in our project.
 
 * **Monster_scrape.ipynb** was used to collect data from Monster.com.
 
+## Limitations
+
+One of the limitations we had was that we only searched for Data Scientist and the keywords of Data Science. Some companies could have used the phrase of Data Analyst or Data Specialist. In this regard, we could have missed a large number of jobs that went by these titles. 
+
+Glassdoor also treated data scraping as a breach of their Terms and Services. As a result, we were not able to complete a full search of their descriptions. We were however able to complete a full search for our other criteria. 
 
