@@ -21,7 +21,7 @@ We also limited our search to just jobs in California and jobs with the titles "
 ## Files: What do they DO?!
 
 ### Folders
-The first thing you'll see on this github will be the following three folders: Data Scrapers, templates, and web pages. 
+The first thing you'll see on this github will be the following three folders: **Data Scrapers**, **templates**, and **web pages**. 
 
 * **Data Scrapers** is where we put the code for the data scrapers we had created. You'll also find the code we used to create our visualizations in this folder.
 
