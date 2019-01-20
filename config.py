@@ -1,6 +1,6 @@
-api_key= "XRd04SIPzQtgFzAq4PcI9W_HAIjTA4aocwoGtY7VLVlvgJw5QuuptD1eg_1ou8KZEw8L-24hmDEgGVX1pnOh4OewbOieiRI-663D6-xIMgGtwMhPB1vobMm5bsbjW3Yx"
+api_key= 
 
-apikey = "XRd04SIPzQtgFzAq4PcI9W_HAIjTA4aocwoGtY7VLVlvgJw5QuuptD1eg_1ou8KZEw8L-24hmDEgGVX1pnOh4OewbOieiRI-663D6-xIMgGtwMhPB1vobMm5bsbjW3Yx"
+apikey = 
 
 
-gkey = "AIzaSyCtDR1eUbEmWjqf6BGo06MO6eiHrfk-NGg"
+gkey = 
