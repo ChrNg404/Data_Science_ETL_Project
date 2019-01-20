@@ -1,6 +1,8 @@
 # ETL Project
 Our team was curious about what our job prospects after class looked like. As a result, we wanted to answer a few questions with as much data as we could find. We then cleaned the data and loaded it into MongoDb. We also loaded what we found onto a website for a fake company named "Data Future" so that anyone interested in our work has an easier time viewing our findings. 
 
+Our website is at: https://chrng404.github.io/Data_Science_ETL_Project/templates/index.html
+
 ## The Questions
 Our team set out to answer a few questions in the data science field: 
 
