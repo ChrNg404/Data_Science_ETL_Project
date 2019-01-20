@@ -18,6 +18,8 @@ To answer these questions, we created data scrapers for Monster.com, CareerBuild
 
 We also limited our search to just jobs in California and jobs with the titles "Data Scientist" or the keywords "Data Science."
 
+Once we collected all of our data, we loaded it into Mongo_db for ease of organization and access in our later work. 
+
 ## Files: What do they DO?!
 
 ### Folders
