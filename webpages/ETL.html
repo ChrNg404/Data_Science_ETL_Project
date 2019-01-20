@@ -61,7 +61,29 @@
     </div>
     <div class="row">
         <div class = "col-md-12">
-             <p id="descriptor"> BLah blah blah blah</p>
+            <p id="descriptor"> To extract the data that we needed, we first created multiple data scrapers for each website we wanted to analyze.<br> The websites we scraped were Monster.com, Glassdoor.com, Indeed.com, and CareerBuilder.com.</p>
+            <p id="descriptor"> Each data extractor pulled a company name, job title, salary information, location, job description, keywords, which site the post came from, and finally the URL of the job posting itself</p>
+            <p id="descriptor"> For the keywords, we looked at common keywords used in our class' curriculum and then did a search for them across job descriptions.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Transform</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class = "col-md-12">
+            <p id="descriptor"> We first stored the results of the four different sites in four different notebooks. <br>Before we joined the results, we removed the duplicates to get each unique job posting by putting our data into dataframes and then organizing from there. <br> Once that was finished, we added columns to indicate site the data was from. <br>Then we merged all four together and dropped duplicates again. Then for each column, like for example location, we extracted just city and state. For Salary, we removed all formatting and unnecessary information (extracted just the number).<br> Finally, we filled all empty cells with "N/A".</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Load</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p id="descriptor"> Once we were finished with cleaning out data, we loaded into Mongo so that we could an easier time calling on what we needed.</p>
         </div>
     </div>
 </div>
