@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ETL</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- <a class="navbar-brand brand-name" href="index.html">Data Future</a> -->
+            <a class="navbar-brand" href="/">
+            <span><img src="https://ya-webdesign.com/images/bonus-clip-bicolor-symbols-6.png" class="img-fluid" style="width:50px;height:60px;"> Data Future
+                </span>  
+                </a>
+          </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/etl/">ETL</a></li>
+                <li><a href="/visualizations/">All Visualizations</a></li>
+                <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Analysis
+                      <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/where/">Where are data science jobs?</a></li>
+                        <li><a href="/what/">What skills should I have?</a></li>
+                        <li><a href="/salary/">Salary Information</a></li>
+                        <li><a href="/websites/">Which website is the best at finding data jobs?</a></li>
+                      </ul>
+                    </li>
+               <!-- li role="separator" class="divider"></li>-->
+                  <!-- <li><a href="#">Don't click me</a></li> -->
+                </li>
+              </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">Extract. Transform. Load.</h1>
+            <!-- <img goes here> -->
+        </div>
+    </div>
+    <div class="row">
+        <div class ="col-md-6">
+            <h2>Extract</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class = "col-md-12">
+            <p id="descriptor"> To extract the data that we needed, we first created multiple data scraper scripts with BeautifulSoup for each website we wanted to analyze.<br> The websites we scraped were Monster.com, Glassdoor.com, Indeed.com, and CareerBuilder.com.</p>
+            <p id="descriptor"> Each data extractor pulled a company name, job title, salary information, location, job description, keywords, which site the post came from, and finally the URL of the job posting itself</p>
+            <p id="descriptor"> For the keywords, we looked at common keywords used in our class' curriculum and then did a search for them across job descriptions.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Transform</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class = "col-md-12">
+            <p id="descriptor"> We first stored the results of the four different sites in four different jupyter notebooks. <br>Before we joined the results, we removed the duplicates to get each unique job posting by putting our data into DataFrames and then organizing from there. <br> Once that was finished, we added columns to indicate site the data was from. <br>Then we merged all four DataFrames together and dropped duplicates again. Then for each column, like for example location, we extracted just city and state. For Salary, we removed all formatting and unnecessary information (extracted just the number).<br> Finally, we filled all empty cells with "NaN".</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Load</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p id="descriptor"> Once we were finished with cleaning our data, we loaded them into Mongo DB for future use.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

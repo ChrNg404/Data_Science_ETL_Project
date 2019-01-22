@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Where are Data Jobs?</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- <a class="navbar-brand brand-name" href="index.html">Data Future</a> -->
+            <a class="navbar-brand" href="/">
+            <span><img src="https://ya-webdesign.com/images/bonus-clip-bicolor-symbols-6.png" class="img-fluid" style="width:50px;height:60px;"> Data Future
+                </span>  
+                </a>
+          </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/etl/">ETL</a></li>
+                <li><a href="/visualizations/">All Visualizations</a></li>
+                <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Analysis
+                      <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/where/">Where are data science jobs?</a></li>
+                        <li><a href="/what/">What skills should I have?</a></li>
+                        <li><a href="/salary/">Salary Information</a></li>
+                        <li><a href="/websites/">Which website is the best at finding data jobs?</a></li>
+                      </ul>
+                    </li>
+               <!-- li role="separator" class="divider"></li>-->
+                  <!-- <li><a href="#">Don't click me</a></li> -->
+                </li>
+              </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">Where are the Data Science Jobs?</h1>
+            <br>
+            <img id = "jobs_city" src="/static/jobs_by_city.png" alt= "jobs by city"  style= "width:850px; height:420px;">
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class = "col-md-6">
+             <p id="descriptor"> A majority of the Data Science jobs we found were in San Francisco (285).</p>
+            <ul>
+                <li>San Diego (73)</li>
+                <li>San Jose (60)</li> 
+                <li>Sunnyvale (49)</li> 
+                <li>Los Angeles (48)</li> 
+                <li>Mountain View (47)</li>
+            </ul>
+        <div class = "col-md-6">
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class ="row">
+        <div class = "col-md-6">
+            <img class = "text-center" src="/static/California_Heat_map.png" alt="California Heatmap" style="width:550px;height:300px;">
+        </div>
+        <div class = "col-md-6">
+            <p id="descriptor"> This heat map of California illustrates where large concentrations of Data Science related jobs are located.</p>
+            <p id="descriptor"> The largest concentration of jobs can be seen in San Francisco and San Jose (345 current job postings for those two cities). Some jobs are also located just east of both of those cities. As a result, if you are looking for a plethora of options, moving to this area will give you more opportunities.</p>
+            <p id="descriptor"> In Southern California, San Diego and Los Angeles make the next largest chunk of data-related jobs (121 current job postings).</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

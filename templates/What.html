@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>What skills should I have?</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- <a class="navbar-brand brand-name" href="index.html">Data Future</a> -->
+            <a class="navbar-brand" href="/">
+            <span><img src="https://ya-webdesign.com/images/bonus-clip-bicolor-symbols-6.png" class="img-fluid" style="width:50px;height:60px;"> Data Future
+                </span>  
+                </a>
+          </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/etl/">ETL</a></li>
+                <li><a href="/visualizations/">All Visualizations</a></li>
+                <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Analysis
+                      <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/where/">Where are data science jobs?</a></li>
+                        <li><a href="/what/">What skills should I have?</a></li>
+                        <li><a href="/salary/">Salary Information</a></li>
+                        <li><a href="/websites/">Which website is the best at finding data jobs?</a></li>
+                      </ul>
+                    </li>
+               <!-- li role="separator" class="divider"></li>-->
+                  <!-- <li><a href="#">Don't click me</a></li> -->
+                </li>
+              </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">What skills should I have?</h1>
+            <br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <img src="/static/skill_keyword_count.png" style="width:800px; height:400px;" class="center" id="what_graph">
+            <br>
+        </div>
+    </div>
+    <div class="row">
+        <div class = "col-md-12">
+             <p id="descriptor" class="text-center"> According to our research, a majority of the jobs we found wanted candidates with an understanding of Python.</p>
+             <p id="descriptor" class="text-center"> The next frequently requested skill to have was machine learning, SQL, and Excel. The 3 least requested skills were VBA, Plotly and Power BI.</p>
+             <p id="descriptor" class="text-center"> Based on this data, it seems like this class has been fairly relevant to the current job market. This is even more true if we learn more about machine learning.</p>
+        </div>
+    </div>
+
+    <br><br><br>
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">What academic backgrounds do they prefer?</h1>
+            <br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <img src="/static/background_keyword_count.png" style="width:800px; height:400px;" class="center" id="what_graph">
+            <br>
+        </div>
+    </div>
+    <div class="row">
+        <div class = "col-md-12">
+             <p id="descriptor" class="text-center"> Aside from skills, candidates with academic background in math, computer science or statistics are preferred by most data scientist jobs</p>
+             <p id="descriptor" class="text-center"> Also, any other technical backgrounds such as economics, finance and science may also help you in becoming a data scientist.</p>
+             <p id="descriptor" class="text-center"> In other words, if you are a person who thinks technically, likes to do research on complex topics and solve problems, this could be a career for you.</p>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>

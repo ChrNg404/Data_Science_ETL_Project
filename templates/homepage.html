@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
 </head>
 <body>
 <nav class="navbar navbar-default">
@@ -28,16 +28,16 @@
                 </a>
           </div>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="../webpages/ETL.html">ETL</a></li>
-                <li><a href="../webpages/Data.html">All Visualizations</a></li>
+                <li><a href="/etl/">ETL</a></li>
+                <li><a href="/visualizations/">All Visualizations</a></li>
                 <li class="dropdown">
                       <a class="dropdown-toggle" data-toggle="dropdown" href="#">Analysis
                       <span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li><a href="../webpages/Where.html">Where are data science jobs?</a></li>
-                        <li><a href="../webpages/What.html">What skills should I have?</a></li>
-                        <li><a href="../webpages/Salary.html">Salary Information</a></li>
-                        <li><a href="../webpages/Websites.html">Which website is the best at finding data jobs?</a></li>
+                        <li><a href="/where/">Where are data science jobs?</a></li>
+                        <li><a href="/what/">What skills should I have?</a></li>
+                        <li><a href="/salary/">Salary Information</a></li>
+                        <li><a href="/websites/">Which website is the best at finding data jobs?</a></li>
                       </ul>
                     </li>
                <!-- li role="separator" class="divider"></li>-->
@@ -50,6 +50,9 @@
 <div class="jumbotron text-center">
         <h1 class="display-4 text-center" id="Jumbo_welcome">Welcome!</h1>
         <p class="lead" id="Jumbo-description">So, you want to be a Data Scientist?</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="/scrape" role="button">Find jobs in San Diego</a>
+        </p>
       </div>
 <br>
 <div class ="text-center" id="demoFont">Your Dataframe for a Better Future</div>
@@ -71,6 +74,32 @@
             </div> 
         </div>
     </div>
+
+<br><br>
+<div class="container">
+    <table border="0" class="table table-striped">
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Title</th>
+                <th>Location</th>
+                <th>Listing Site</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for item in listings_list %}
+            <tr>
+                <td>{{ item.Company }}</td> 
+                <td>{{ item.Title }}</td> 
+                <td>{{ item.Location }}</td> 
+                <td><a href="{{ item.URL }}" target="_blank">Go to listing</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+
 </body>
 </html>
-
