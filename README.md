@@ -1,7 +1,9 @@
 # ETL Project
 Our team was curious about what our job prospects after class looked like. As a result, we wanted to answer a few questions with as much data as we could find. We then cleaned the data and loaded it into MongoDb. We also loaded what we found onto a website for a fake company named "Data Future" so that anyone interested in our work has an easier time viewing our findings. 
 
-Our website is at: https://chrng404.github.io/Data_Science_ETL_Project/templates/index.html
+Our website (analysis only) is at: https://chrng404.github.io/Data_Science_ETL_Project/templates/index.html 
+
+Our website with web application incorporated: run app.py and view on local host
 
 For a better look at our findings, please feel free to visit our website or view the powerpoint presentation. 
 
@@ -34,9 +36,11 @@ The first thing you'll see on this github will be the following three folders: *
 
 * **Resources** are for miscellaneous data our group had to use to make graphs. Currently there should only be the one city file that was used to create our heatmap.   
 
-* **Visualizations** is where we store all of the Visualizations we created for this project. Inside this folder you will find a **charts** folder where we hold a majority of our graphs. Everything before hand is code to help create our charts.  
+* **Visualizations** is where we store all of the Visualizations we created for this project. Inside this folder you will find a **charts** folder where we hold a majority of our graphs. Everything before hand is code to help create our charts.
 
-* **templates** is the folder where the website's index.html and style.css are. 
+* **static** is the folder where all the static contents for our web application (Flask) are
+
+* **templates** is the folder where the website's index.html (for our static site with analysis only), homepage (for our Flask app) and style.css are. 
 
 * **webpages** contains all of the web pages that are attached to our HTML website.
 
@@ -54,6 +58,8 @@ Below the folders,  you'll find several files that were used in our project.
 * **Indeed_scrape.ipynb** was used to collect data from Indeed.com.
 
 * **Monster_scrape.ipynb** was used to collect data from Monster.com.
+* **app.py** used to host our site on Flask 
+* **scrape_new.py** for our web application, contains function that scrape the most recent job listings
 
 ## Limitations
 
