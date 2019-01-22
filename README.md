@@ -1,9 +1,13 @@
 # ETL Project
 Our team was curious about what our job prospects after class looked like. As a result, we wanted to answer a few questions with as much data as we could find. We then cleaned the data and loaded it into MongoDb. We also loaded what we found onto a website for a fake company named "Data Future" so that anyone interested in our work has an easier time viewing our findings. 
 
-Our website (analysis only) is at: https://chrng404.github.io/Data_Science_ETL_Project/templates/index.html 
+For our analysis:
 
-Our website with web application incorporated: run "app.py" and view website on local host
+visit our website at: https://chrng404.github.io/Data_Science_ETL_Project/templates/index.html 
+
+To test out our web application:
+
+run "app.py" and view website on local host. Click button "Find jobs in San Diego" on homepage to view combined results of real-time, most recent data science job postings from different career sites
 
 For a better look at our findings, please feel free to visit our website or view the powerpoint presentation. 
 
