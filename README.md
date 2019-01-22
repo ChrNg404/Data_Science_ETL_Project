@@ -3,7 +3,7 @@ Our team was curious about what our job prospects after class looked like. As a 
 
 Our website (analysis only) is at: https://chrng404.github.io/Data_Science_ETL_Project/templates/index.html 
 
-Our website with web application incorporated: run app.py and view on local host
+Our website with web application incorporated: run "app.py" and view website on local host
 
 For a better look at our findings, please feel free to visit our website or view the powerpoint presentation. 
 
