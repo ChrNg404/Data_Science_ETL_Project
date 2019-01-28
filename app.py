@@ -15,6 +15,10 @@ def home():
     # db name: newest_job_listings
     # collection name: data_scientist
     listings_list = mongo.db.data_scientist.find()
+   
+   # If listing_list is not found, redirect path to scrape() (scrape_new.py)
+    if(listings_list is None):
+        return redirect('/scrape', code=302)
     # Return template and data
     return render_template("homepage.html", listings_list=listings_list)
 

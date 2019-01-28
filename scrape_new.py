@@ -253,5 +253,11 @@ def scrape():
             "Date": datetime.datetime.utcnow()
         })
 
+    # Close the browser after scraping
+    browser.quit()
+
     #print(len(total_listings))
     return(total_listings)
+
+    if(__name__ == '__main__'):
+        print(scrape())
